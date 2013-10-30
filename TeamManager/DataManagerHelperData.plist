@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RosterTypes</key>
+	<array>
+		<string>League season roster</string>
+		<string>League game roster</string>
+		<string>Tournament game roster</string>
+		<string>Friendly/Exhibition game roster</string>
+		<string>Special event roster</string>
+	</array>
+	<key>EventTypes</key>
+	<array>
+		<string>Regular training session</string>
+		<string>Special training session</string>
+		<string>Scrimmage</string>
+		<string>League game</string>
+		<string>Tournament game</string>
+		<string>Friendly/Exhibition game</string>
+	</array>
+	<key>Seasons</key>
+	<array>
+		<array>
+			<string>Fall</string>
+			<string>2013</string>
+			<string>leaf-50.png</string>
+		</array>
+		<array>
+			<string>Winter</string>
+			<string>2013</string>
+			<string>snow_storm-50.png</string>
+		</array>
+		<array>
+			<string>Spring</string>
+			<string>2014</string>
+			<string>flower-50.png</string>
+		</array>
+		<array>
+			<string>Summer</string>
+			<string>2014</string>
+			<string>sun-50.png</string>
+		</array>
+	</array>
+	<key>SoccerFields</key>
+	<array>
+		<array>
+			<string>Stenger Soccer Complex</string>
+			<string>11200 W 58th Ave 80002</string>
+			<string>Stenger.png</string>
+		</array>
+		<array>
+			<string>El Pomar Youth Sports Complex</string>
+			<string>2230 Executive Circle 80906</string>
+			<string>ElPomar.png</string>
+		</array>
+		<array>
+			<string>Pride Soccer Complex</string>
+			<string>8700 E Woodmen Rd 80908</string>
+			<string>PrideSoccerComplex.png</string>
+		</array>
+	</array>
+	<key>Positions</key>
+	<array>
+		<string>Goal Keeper</string>
+		<string>Right Back</string>
+		<string>Left Back</string>
+		<string>Center Back</string>
+		<string>Center Back</string>
+		<string>Defensive Mid</string>
+		<string>Right Wing</string>
+		<string>Attacking Mid</string>
+		<string>Striker</string>
+		<string>Forward</string>
+		<string>Left Wing</string>
+	</array>
+	<key>TeamColors</key>
+	<array>
+		<array>
+			<string>ArsenalHome.png</string>
+			<string>ArsenalAway.png</string>
+			<string>Arsenal-Logo.png</string>
+			<string>Navy/White</string>
+		</array>
+		<array>
+			<string>PrideHome.png</string>
+			<string>PrideAway.png</string>
+			<string>Pride-Logo.png</string>
+			<string>Red/White</string>
+		</array>
+		<array>
+			<string>RapidsHome.png</string>
+			<string>RapidsAway.png</string>
+			<string>Rapids-Logo.png</string>
+			<string>Maroon/White</string>
+		</array>
+		<array>
+			<string>RealHome.png</string>
+			<string>RealAway.png</string>
+			<string>Real-CO-Logo.png</string>
+			<string>Red/White</string>
+		</array>
+		<array>
+			<string>StormHome.png</string>
+			<string>StormAway.png</string>
+			<string>CO-Storm-Logo.png</string>
+			<string>Blue/White</string>
+		</array>
+		<array>
+			<string>Red.png</string>
+			<string>Black.png</string>
+			<string>shield-50.png</string>
+			<string>Red/Black</string>
+		</array>
+		<array>
+			<string>Red.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Red/White</string>
+		</array>
+		<array>
+			<string>Orange.png</string>
+			<string>Black.png</string>
+			<string>shield-50.png</string>
+			<string>Orange/Black</string>
+		</array>
+		<array>
+			<string>Orange.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Orange/White</string>
+		</array>
+		<array>
+			<string>Yellow.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Yellow/White</string>
+		</array>
+		<array>
+			<string>Yellow.png</string>
+			<string>Black.png</string>
+			<string>shield-50.png</string>
+			<string>Yellow/Black</string>
+		</array>
+		<array>
+			<string>Green.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Green/White</string>
+		</array>
+		<array>
+			<string>Green.png</string>
+			<string>Black.png</string>
+			<string>shield-50.png</string>
+			<string>Green/Black</string>
+		</array>
+		<array>
+			<string>Blue.png</string>
+			<string>Black.png</string>
+			<string>shield-50.png</string>
+			<string>Blue/Black</string>
+		</array>
+		<array>
+			<string>Blue.png</string>
+			<string>Grey.png</string>
+			<string>shield-50.png</string>
+			<string>Blue/Silver</string>
+		</array>
+		<array>
+			<string>Blue.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Blue/White</string>
+		</array>
+		<array>
+			<string>Maroon.png</string>
+			<string>Grey.png</string>
+			<string>shield-50.png</string>
+			<string>Maroon/Silver</string>
+		</array>
+		<array>
+			<string>Maroon.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Maroon/White</string>
+		</array>
+		<array>
+			<string>Black.png</string>
+			<string>White.png</string>
+			<string>shield-50.png</string>
+			<string>Black/White</string>
+		</array>
+		<array>
+			<string>Black.png</string>
+			<string>Grey.png</string>
+			<string>shield-50.png</string>
+			<string>Black/Silver</string>
+		</array>
+	</array>
+	<key>YearGroups</key>
+	<array>
+		<string>U18</string>
+		<string>U17</string>
+		<string>U16</string>
+		<string>U15</string>
+		<string>U14</string>
+		<string>U12</string>
+		<string>U11</string>
+		<string>U10</string>
+		<string>U9</string>
+	</array>
+	<key>Divisions</key>
+	<array>
+		<string>Super League</string>
+		<string>Division 1</string>
+		<string>Division 2</string>
+		<string>Division 3</string>
+		<string>Division 4</string>
+		<string>Division 4 Red</string>
+		<string>Division 4 Blue</string>
+		<string>Premier 1</string>
+		<string>Premier 2</string>
+		<string>Classic Red</string>
+		<string>Classic White</string>
+		<string>Classic Blue</string>
+		<string>Classic 1</string>
+		<string>Classic 2</string>
+		<string>Classic 3</string>
+		<string>Challenge North</string>
+		<string>Challenge Metro</string>
+		<string>Challenge South</string>
+		<string>Intermediate Gold</string>
+		<string>Intermediate Gold 1</string>
+		<string>Intermediate Gold 2</string>
+		<string>Intermediate Silver</string>
+		<string>Intermediate Bronze</string>
+	</array>
+	<key>CoYouthSoccerClubs</key>
+	<array>
+		<array>
+			<string>Arsenal</string>
+			<string>Fort Collins, CO</string>
+			<string>Arsenal-Logo.png</string>
+			<string>ArsenalHome.png</string>
+			<string>ArsenalAway.png</string>
+		</array>
+		<array>
+			<string>Real Colorado</string>
+			<string>Highlands Ranch, CO</string>
+			<string>Real-CO-Logo.png</string>
+			<string>RealHome.png</string>
+			<string>RealAway.png</string>
+		</array>
+		<array>
+			<string>Colorado United</string>
+			<string>Littleton, CO</string>
+			<string>United-Logo.png</string>
+			<string>Blue.png</string>
+			<string>White.png</string>
+		</array>
+		<array>
+			<string>Pride Soccer Club</string>
+			<string>Colorado Springs, CO</string>
+			<string>Pride-Logo.png</string>
+			<string>PrideHome.png</string>
+			<string>PrideAway.png</string>
+		</array>
+		<array>
+			<string>Pikes Peak Rush</string>
+			<string>Colorado Springs, CO</string>
+			<string>Rush-Logo.png</string>
+			<string>Blue.png</string>
+			<string>Silver.png</string>
+		</array>
+		<array>
+			<string>Colorado Storm Castle Rock</string>
+			<string>Castle Rock, CO</string>
+			<string>CO-Storm-Logo.png</string>
+			<string>StormHome.png</string>
+			<string>StormAway.png</string>
+		</array>
+		<array>
+			<string>Rapids Youth Soccer Club</string>
+			<string>Denver, CO</string>
+			<string>Rapids-Logo.png</string>
+			<string>RapidsHome.png</string>
+			<string>RapidsAway.png</string>
+		</array>
+		<array>
+			<string>Edge Soccer Club</string>
+			<string>Arvada, CO</string>
+			<string>Edge-Logo.png</string>
+			<string>Black.png</string>
+			<string>White.png</string>
+		</array>
+	</array>
+</dict>
+</plist>

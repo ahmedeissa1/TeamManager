@@ -1,4 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="1.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ContactInfo_cnf" representedClassName="tmContactInfoMO" syncable="YES">
+        <attribute name="cnfAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfAddress2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfCellPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfEmailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfIsEmergency" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="cnfIsPrimary" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="cnfLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfPostalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnfType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fkPlrIdCnf" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pkCnfId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cnfPlayers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Players_plr" inverseName="plrContactInfo" inverseEntity="Players_plr" syncable="YES"/>
+    </entity>
+    <entity name="GameNotes_gnt" representedClassName="tmGameNotesMO" syncable="YES">
+        <attribute name="fkGamIdGnt" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gntNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gntNoteDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pkGntId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="gntGames" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Games_gam" inverseName="gamGameNotes" inverseEntity="Games_gam" syncable="YES"/>
+    </entity>
+    <entity name="Games_gam" representedClassName="tmGamesMO" syncable="YES">
+        <attribute name="fkOTmsIdGam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fkTmsIdGam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gamDidEndInPK" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="gamGameCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamGameField" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamGamePostalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamGameType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamHalfDuration" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gamIsHomeTeam" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="gamLeagueGameId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamNvN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamOSystemOfPlay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gamSchedGameDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="gamStartDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="gamSystemOfPlay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pkGamId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="gamGameNotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GameNotes_gnt" inverseName="gntGames" inverseEntity="GameNotes_gnt" syncable="YES"/>
+        <relationship name="gamGameStats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GameStats_gst" inverseName="gstGames" inverseEntity="GameStats_gst" syncable="YES"/>
+        <relationship name="gamRosters" optional="YES" toMany="YES" minCount="1" maxCount="2" deletionRule="Nullify" destinationEntity="Rosters_ros" inverseName="rosGames" inverseEntity="Rosters_ros" syncable="YES"/>
+        <relationship name="gamTeams" optional="YES" toMany="YES" minCount="2" maxCount="2" deletionRule="Nullify" destinationEntity="Teams_tms" inverseName="tmsGames" inverseEntity="Teams_tms" syncable="YES"/>
+    </entity>
+    <entity name="GameStats_gst" representedClassName="tmGameStatsMO" syncable="YES">
+        <attribute name="fkGamIdGst" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fkPlrIdGst" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gstStat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gstStatDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="gstStatIsOpponent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="gstStatValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pkGstId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="gstGames" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Games_gam" inverseName="gamGameStats" inverseEntity="Games_gam" syncable="YES"/>
+        <relationship name="gstPlayers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Players_plr" inverseName="plrGameStats" inverseEntity="Players_plr" syncable="YES"/>
+    </entity>
+    <entity name="Players_plr" representedClassName="tmPlayersMO" syncable="YES">
+        <attribute name="pkPlrId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="plrAvailableDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="plrFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plrIsGuest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrIsInjured" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrIsInReserve" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrIsStarter" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrIsSub" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrIsSuspended" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="plrJerseyNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plrLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plrNickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plrPrimaryPosition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plrSecondaryPosition" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="plrContactInfo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactInfo_cnf" inverseName="cnfPlayers" inverseEntity="ContactInfo_cnf" syncable="YES"/>
+        <relationship name="plrGameStats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GameStats_gst" inverseName="gstPlayers" inverseEntity="GameStats_gst" syncable="YES"/>
+        <relationship name="plrRosters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rosters_ros" inverseName="rosPlayers" inverseEntity="Rosters_ros" syncable="YES"/>
+    </entity>
+    <entity name="Rosters_ros" representedClassName="tmRostersMO" syncable="YES">
+        <attribute name="fkGmsIdRos" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fkPlrIdRos" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fkTmsIdRos" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rosId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rosIsOpponent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="rosSeason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rosType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rosGames" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Games_gam" inverseName="gamRosters" inverseEntity="Games_gam" syncable="YES"/>
+        <relationship name="rosPlayers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Players_plr" inverseName="plrRosters" inverseEntity="Players_plr" syncable="YES"/>
+        <relationship name="rosTeams" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teams_tms" inverseName="tmsRosters" inverseEntity="Teams_tms" syncable="YES"/>
+    </entity>
+    <entity name="Teams_tms" representedClassName="tmTeamsMO" syncable="YES">
+        <attribute name="pkTmsId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tmsAgeDivision" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tmsAwayColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tmsClubName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tmsHomeColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tmsIsOpponent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tmsName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tmsSeason" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tmsGames" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Games_gam" inverseName="gamTeams" inverseEntity="Games_gam" syncable="YES"/>
+        <relationship name="tmsRosters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rosters_ros" inverseName="rosTeams" inverseEntity="Rosters_ros" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContactInfo_cnf" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GameNotes_gnt" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Games_gam" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GameStats_gst" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Players_plr" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Rosters_ros" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Teams_tms" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
 </model>

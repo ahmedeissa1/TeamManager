@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xth-j0-2cS">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Practice Manager NC-->
+        <scene sceneID="lr0-Ao-HAM">
+            <objects>
+                <navigationController title="Practice Manager NC" navigationBarHidden="YES" id="xth-j0-2cS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="MLj-Bh-tzR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mIl-Nz-Qou" kind="relationship" relationship="rootViewController" id="Jk6-tz-2Zd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSV-QZ-NdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="76"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F7r-U9-jr4">
+            <objects>
+                <viewController id="mIl-Nz-Qou" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gR-dv-BCt"/>
+                        <viewControllerLayoutGuide type="bottom" id="q84-Eh-ZUi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qMc-r7-DAd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeT-y0-jl5">
+                                <rect key="frame" x="20" y="20" width="280" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="JjQ-yW-tiT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="64"/>
+                                <color key="textColor" red="0.0" green="0.60000002379999995" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MANAGER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-tV-qZ6">
+                                <rect key="frame" x="20" y="93" width="280" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="PaM-3f-ELg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="68"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24y-RY-Ezn">
+                                <rect key="frame" x="20" y="298" width="135" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="RsC-y8-NIV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="-48" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="44" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Run Practice" image="megafone2-48.png">
+                                    <color key="titleColor" red="0.0" green="0.60000002379999995" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcu-cs-PlB">
+                                <rect key="frame" x="165" y="298" width="135" height="134"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-48" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="44" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Schedule" image="planner-48.png">
+                                    <color key="titleColor" red="0.0" green="0.60000002379999995" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kv-h5-hqT">
+                                <rect key="frame" x="20" y="156" width="135" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="6Xx-MI-xqo"/>
+                                    <constraint firstAttribute="height" constant="134" id="HrW-kZ-zt3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-48" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="44" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Activities" image="edit_property-48.png">
+                                    <color key="titleColor" red="0.0" green="0.60000002379999995" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV3-OU-9d1">
+                                <rect key="frame" x="165" y="156" width="135" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Qdw-lw-Ksf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-48" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="44" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="4-48.png">
+                                    <color key="titleColor" red="0.0" green="0.60000002379999995" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-Fg-vrb">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="P3u-Kt-For"/>
+                                    <constraint firstAttribute="height" constant="32" id="eob-IP-xkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="4" minY="4" maxX="3" maxY="3"/>
+                                <state key="normal" image="home-25.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MFd-0R-voU" kind="unwind" unwindAction="unwindToHome:" id="1gU-tR-ckG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iV3-OU-9d1" firstAttribute="leading" secondItem="qcu-cs-PlB" secondAttribute="leading" id="1WI-ig-OYc"/>
+                            <constraint firstItem="24y-RY-Ezn" firstAttribute="bottom" secondItem="qcu-cs-PlB" secondAttribute="bottom" id="1ig-nY-it4"/>
+                            <constraint firstItem="GeT-y0-jl5" firstAttribute="leading" secondItem="qMc-r7-DAd" secondAttribute="leading" constant="20" symbolic="YES" id="3T5-qZ-G49"/>
+                            <constraint firstItem="CnH-tV-qZ6" firstAttribute="top" secondItem="GeT-y0-jl5" secondAttribute="bottom" constant="8" symbolic="YES" id="7b9-h3-GgZ"/>
+                            <constraint firstItem="iV3-OU-9d1" firstAttribute="top" secondItem="CnH-tV-qZ6" secondAttribute="bottom" constant="8" symbolic="YES" id="7w3-gN-2Fa"/>
+                            <constraint firstItem="8Kv-h5-hqT" firstAttribute="top" secondItem="CnH-tV-qZ6" secondAttribute="bottom" constant="8" symbolic="YES" id="8YD-0W-WNd"/>
+                            <constraint firstItem="CnH-tV-qZ6" firstAttribute="leading" secondItem="qMc-r7-DAd" secondAttribute="leading" constant="20" symbolic="YES" id="CSu-Ma-OOG"/>
+                            <constraint firstItem="24y-RY-Ezn" firstAttribute="leading" secondItem="qMc-r7-DAd" secondAttribute="leading" constant="20" symbolic="YES" id="ENR-Cc-sNp"/>
+                            <constraint firstItem="qcu-cs-PlB" firstAttribute="top" secondItem="iV3-OU-9d1" secondAttribute="bottom" constant="8" symbolic="YES" id="Nk7-Pe-3eb"/>
+                            <constraint firstAttribute="trailing" secondItem="GeT-y0-jl5" secondAttribute="trailing" constant="20" symbolic="YES" id="Zbr-6c-U2h"/>
+                            <constraint firstAttribute="trailing" secondItem="qcu-cs-PlB" secondAttribute="trailing" constant="20" symbolic="YES" id="aso-IS-ZTe"/>
+                            <constraint firstItem="Zjk-Fg-vrb" firstAttribute="leading" secondItem="qMc-r7-DAd" secondAttribute="leading" id="bKc-Jj-BeW"/>
+                            <constraint firstItem="24y-RY-Ezn" firstAttribute="top" secondItem="qcu-cs-PlB" secondAttribute="top" id="dWH-cY-60s"/>
+                            <constraint firstItem="8Kv-h5-hqT" firstAttribute="leading" secondItem="qMc-r7-DAd" secondAttribute="leading" constant="20" symbolic="YES" id="gwG-4O-36R"/>
+                            <constraint firstItem="GeT-y0-jl5" firstAttribute="top" secondItem="qMc-r7-DAd" secondAttribute="top" constant="20" symbolic="YES" id="lFh-VU-g5p"/>
+                            <constraint firstItem="Zjk-Fg-vrb" firstAttribute="top" secondItem="qMc-r7-DAd" secondAttribute="top" id="pBy-qb-oMt"/>
+                            <constraint firstItem="24y-RY-Ezn" firstAttribute="top" secondItem="8Kv-h5-hqT" secondAttribute="bottom" constant="8" symbolic="YES" id="xmW-cm-4En"/>
+                            <constraint firstAttribute="trailing" secondItem="iV3-OU-9d1" secondAttribute="trailing" constant="20" symbolic="YES" id="xtW-Wg-BEh"/>
+                            <constraint firstAttribute="trailing" secondItem="CnH-tV-qZ6" secondAttribute="trailing" constant="20" symbolic="YES" id="y1o-uZ-X2a"/>
+                            <constraint firstItem="24y-RY-Ezn" firstAttribute="trailing" secondItem="8Kv-h5-hqT" secondAttribute="trailing" id="z81-mw-em2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xmn-VR-jbq"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2Y-tb-9yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MFd-0R-voU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4-48.png" width="48" height="48"/>
+        <image name="edit_property-48.png" width="48" height="48"/>
+        <image name="home-25.png" width="25" height="25"/>
+        <image name="megafone2-48.png" width="256" height="256"/>
+        <image name="planner-48.png" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
